@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"
+            />
+        <item
+            android:id="@+id/services"
+            android:title="@string/services"
+            android:icon="@drawable/ic_business"
+            />
+        <item
+            android:id="@+id/order"
+            android:title="@string/order"
+            android:icon="@drawable/ic_shopping_cart"
+            />
+        <item
+            android:id="@+id/report"
+            android:title="@string/report"
+            android:icon="@drawable/ic_assignment"
+            />
+        <item
+            android:id="@+id/payment"
+            android:title="@string/payments"
+            android:icon="@drawable/ic_payment"
+            />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/help"
+            android:title="@string/help_amp_support"
+            android:icon="@drawable/ic_help"
+            />
+        <item
+            android:id="@+id/contact"
+            android:title="@string/contact_us"
+            android:icon="@drawable/ic_contact_phone"
+            />
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout"
+            android:icon="@drawable/ic_exit_to_app"
+            />
+    </group>
+</menu>

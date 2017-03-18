@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    card_view:cardCornerRadius="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/return_id_and_return_amount">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return Id"
+                    android:textSize="12sp"
+                    android:id="@+id/return_id_label"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return Id"
+                    android:textSize="17sp"
+                    android:id="@+id/return_id"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_below="@+id/return_id_label"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return Amount"
+                    android:textSize="12sp"
+                    android:id="@+id/return_amount_label"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return Amount"
+                    android:textSize="17sp"
+                    android:id="@+id/return_amount"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_below="@+id/return_amount_label"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@+id/return_id_and_return_amount"
+            android:id="@+id/order_number_and_date_label">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order number"
+                    android:textSize="12sp"
+                    android:id="@+id/order_number_label"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order number"
+                    android:textSize="17sp"
+                    android:id="@+id/order_number"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_below="@+id/order_number_label"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order date"
+                    android:textSize="12sp"
+                    android:id="@+id/order_date_label"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Date"
+                    android:textSize="17sp"
+                    android:id="@+id/order_date"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_below="@+id/order_date_label"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order from"
+            android:textSize="12sp"
+            android:id="@+id/order_from_label"
+            android:layout_below="@+id/order_number_and_date_label"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:maxLines="2"
+            android:textSize="17sp"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/order_from"
+            android:layout_below="@+id/order_from_label"
+            android:layout_marginBottom="15sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Order Amount"
+            android:textSize="12sp"
+            android:id="@+id/total_order_amount_label"
+            android:layout_below="@+id/order_from"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/total_order_amount"
+            android:layout_below="@+id/total_order_amount_label"
+            android:layout_marginBottom="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="12sp"
+            android:id="@+id/status_label"
+            android:layout_below="@+id/total_order_amount"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="17sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/status"
+            android:layout_below="@+id/status_label" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

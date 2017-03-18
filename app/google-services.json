@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "570981409383",
+    "firebase_url": "https://adurcup-seller-23f3d.firebaseio.com",
+    "project_id": "adurcup-seller-23f3d",
+    "storage_bucket": "adurcup-seller-23f3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570981409383:android:fe236610408a9191",
+        "android_client_info": {
+          "package_name": "com.adurcup.seller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570981409383-le8uicuen6747733jstp9hv65n3qmuog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adurcup.seller",
+            "certificate_hash": "71AAE5C1191292E07D68F3D30C47D86F7E2A1BEA"
+          }
+        },
+        {
+          "client_id": "570981409383-188a7ld34v21at0kdcerom8d2r4hjk1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLS7PbSDGIl1_vcwaTp6uIbaIiNdTrwec"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570981409383-188a7ld34v21at0kdcerom8d2r4hjk1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

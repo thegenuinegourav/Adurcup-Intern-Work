@@ -1,0 +1,17 @@
+						Timeline till 15th January
+
+6/1/17 : Integrate API for Edit Details in Business Profile Activity
+
+7/1/17 : Build Orders Activity Skeleton UI + Pending Screen UI
+
+9/1/17 : To Pick Up Screen UI + Return Screen UI 
+
+10/1/17 : Pending Screen API Parsing 
+
+11/1/17 : To Pick Up Screen API Parsing
+
+12/1/17 : Return Screen API Parsing
+
+13/1/17 : Order History Screen UI
+
+14/1/17 : Order History Screen API Parsing

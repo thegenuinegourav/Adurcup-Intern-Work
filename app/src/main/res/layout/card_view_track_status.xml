@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/pickup_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:id="@+id/pick_up_id_title" />
+
+
+        <TextView
+            android:text="@string/pickup_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="2dp"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/pick_up_id_title"
+            android:layout_toEndOf="@+id/pick_up_id_title"
+            android:id="@+id/pickup_id" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/items_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/items_title" />
+
+
+            <TextView
+                android:text="@string/items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:layout_toRightOf="@+id/items_title"
+                android:layout_toEndOf="@+id/items_title"
+                android:id="@+id/items" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/pick_up_address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/pick_up_addresss_title" />
+
+
+            <TextView
+                android:text="@string/pick_up_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:padding="2dp"
+                android:layout_below="@+id/pick_up_addresss_title"
+                android:id="@+id/pick_up_address" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/status_title" />
+
+
+            <TextView
+                android:text="@string/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="2dp"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:layout_toRightOf="@+id/status_title"
+                android:layout_toEndOf="@+id/status_title"
+                android:id="@+id/status" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

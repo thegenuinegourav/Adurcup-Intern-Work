@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progress_bar_layout"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/pickup_address"
+                style="@style/TextInputLayout"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <EditText
+                    style="@style/EditText"
+                    android:inputType="textPostalAddress"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/pickup_address_title" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/pin"
+                style="@style/TextInputLayout"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <EditText
+                    style="@style/EditText"
+                    android:hint="@string/pin_code_title"
+                    android:maxLength="6"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/concerned_name"
+                style="@style/TextInputLayout"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <EditText
+                    style="@style/EditText"
+                    android:hint="@string/concerned_person_title"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/primary_mobile_number"
+                style="@style/TextInputLayout"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <EditText
+                    style="@style/EditText"
+                    android:hint="@string/primary_mobile_number_title"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:imeOptions="actionNext"
+                    android:tag="+91" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/secondary_mobile_number"
+                style="@style/TextInputLayout"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <EditText
+                    style="@style/EditText"
+                    android:hint="@string/secondary_mobile_number_title"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:imeOptions="actionNext"
+                    android:tag="+91" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/weight_of_package"
+                    style="@style/TextInputLayout"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/error_appearance">
+
+                    <EditText
+                        style="@style/EditText"
+                        android:hint="@string/weight_of_package"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/number_of_products"
+                    style="@style/TextInputLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:errorTextAppearance="@style/error_appearance">
+
+                    <EditText
+                        style="@style/EditText"
+                        android:hint="@string/number_of_products_title"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <EditText
+                    style="@style/EditText"
+                    android:id="@+id/choose_pickup_date"
+                    android:hint="@string/choose_pickup_date" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"></LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/schedule_pickup"
+        style="@style/Button"
+        android:layout_height="wrap_content"
+        android:onClick="schedule_pickup"
+        android:text="@string/schedule_pickup_title" />
+
+</LinearLayout>

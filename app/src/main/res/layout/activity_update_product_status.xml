@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_product_description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adurcup.adurcupseller.activity.ProductDescriptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unit Description"
+                    android:textSize="12sp" />
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="19sp" />
+
+
+                <TextView
+                    android:id="@+id/packet_details_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Packet Details"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/packet_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="15dp"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:imeOptions="actionNext"
+                        android:layout_toLeftOf="@+id/packet_details_per"
+                        android:text=""
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/packet_details_per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:text="units / packet"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price (Unit Description)"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <EditText
+                        android:id="@+id/price_unit_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/price_unit_description_per"
+                        android:text="Price"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:imeOptions="actionNext"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/price_unit_description_per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:text="per piece"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minimum Order Quantity"
+                    android:textSize="12sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <EditText
+                        android:id="@+id/minimum_order_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:layout_toLeftOf="@+id/minimum_order_quantity_per"
+                        android:text="Maximum Order Quantity"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/minimum_order_quantity_per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:text="per piece"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/increment_value_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Increment value in orders"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/increment_value_info"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/increment_value_label"
+                        android:background="@drawable/info" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <EditText
+                        android:id="@+id/increment_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/increment_value_per"
+                        android:text="Incremental Value"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/increment_value_per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:text="per piece"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Status"
+                    android:textSize="12sp" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_compat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:checked="true"
+                    android:paddingRight="30dp"
+                    android:text="Active"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#292929"
+            android:text="Save Changes"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

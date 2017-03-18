@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/company_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="Company Registered Name"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/company_name_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingBottom="14dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:paddingTop="8dp"
+                    android:inputType="textPersonName"
+                    android:text="Company Registered Name"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="Legal Status"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/legal_status_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="8dp"
+                    android:text="Legal Status"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="Registered Address"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/registered_address_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:lines="2"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="8dp"
+                    android:text="Registered Address"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="Primary Mobile Number"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/primary_mobile_number_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingBottom="14dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:paddingTop="8dp"
+                    android:inputType="phone"
+                    android:text="Primary Mobile Number"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="Secondary Mobile Number"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/secondary_mobile_number_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingBottom="14dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="phone"
+                    android:paddingTop="8dp"
+                    android:text="Secondary Mobile Number"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="Email Address"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/email_address_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingBottom="14dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:paddingTop="8dp"
+                    android:inputType="textEmailAddress"
+                    android:text="Email Address"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="PAN Number"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/pan_number_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingBottom="14dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:paddingTop="8dp"
+                    android:inputType="text"
+                    android:text="PAN Number"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="VAT Number"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/vat_number_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="8dp"
+                    android:inputType="text"
+                    android:text="VAT Number"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="Service Tax Registered Number"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/service_tax_registered_number_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="8dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:text="Service Tax Registered Number"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="16dp"
+                    android:text="Service Tax Code Number"
+                    android:textColor="#808080"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/service_tax_code_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="8dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:text="Service Tax Code Number"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/edit_details_company"
+            android:layout_margin="7dp"
+            android:layout_weight="0.8"
+            android:background="@android:color/background_dark"
+            android:text="Edit Details"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
